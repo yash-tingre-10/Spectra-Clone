@@ -5,13 +5,16 @@ const bannerIMG = "https://cdn.shortpixel.ai/spai/w_1536+q_lossless+ret_img+to_w
 const Banner = () => {
   return (
     <div className="text-center py-10 mx-20">
-     <h1 className="text-5xl font-semibold mb-4 font-serif">Create Your Dream Website With a Visual Website Builder</h1>
-      <button className=" m-5 bg-blue-600 text-white py-4 px-8 hover:bg-blue-700">
+      <h1 className="text-2xl md:text-5xl font-semibold mb-4 font-serif text-center max-w-screen-lg mx-auto">
+        Create Your Dream Website With a Visual Website Builder
+      </h1>
+
+      <button className="m-5 bg-blue-600 text-white py-4 px-8 hover:bg-blue-700">
         Get Started
       </button>
 
       <div className="text-center mt-8">
-        <img src={bannerIMG} className="mx-auto" />
+        <img src={bannerIMG} className="mx-auto" alt="Banner" />
       </div>
     </div>
   );
