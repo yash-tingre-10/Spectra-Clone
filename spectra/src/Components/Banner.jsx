@@ -5,7 +5,7 @@ const bannerIMG = "https://cdn.shortpixel.ai/spai/w_1536+q_lossless+ret_img+to_w
 const Banner = () => {
   return (
     <div className="text-center py-10 mx-20">
-      <h1 className="text-2xl md:text-5xl font-semibold mb-4 font-serif text-center max-w-screen-lg mx-auto">
+      <h1 className="text-2xl md:text-6xl font-semibold mb-4 font-serif text-center max-w-screen-lg mx-auto">
         Create Your Dream Website With a Visual Website Builder
       </h1>
 
