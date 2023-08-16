@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const bannerIMG = "https://cdn.shortpixel.ai/spai/w_1536+q_lossless+ret_img+to_webp/wpspectra.com/wp-content/uploads/2023/07/banner-image.png";
+const bannerIMG =
+  "https://cdn.shortpixel.ai/spai/w_1536+q_lossless+ret_img+to_webp/wpspectra.com/wp-content/uploads/2023/07/banner-image.png";
 
 const Banner = () => {
   return (
@@ -18,6 +19,6 @@ const Banner = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Banner;
