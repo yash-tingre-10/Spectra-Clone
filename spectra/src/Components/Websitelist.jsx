@@ -45,7 +45,7 @@ const Websitelist = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center">
+    <div className="flex flex-col md:flex-row justify-center my-20">
       <div className="m-0 p-2 min-w-[300px]">
         <ul>
           {imageNames.map((name, index) => (
