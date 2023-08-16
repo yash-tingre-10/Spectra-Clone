@@ -45,7 +45,7 @@ const Websitelist = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center my-20">
+    <div className="flex flex-col md:flex-row justify-center items-center my-20">
       <div className="m-0 p-2 min-w-[300px]">
         <ul>
           {imageNames.map((name, index) => (
@@ -65,8 +65,8 @@ const Websitelist = () => {
           ))}
         </ul>
       </div>
-      <div className="md:flex md:flex-col md:items-center justify-center">
-        <img src={selectedImage} className="m-2 h-auto w-[85%]" alt="Selected" />
+      <div className="md:flex md:flex-col md:items-center justify-center ">
+        <img src={selectedImage} className="m-2 mx-8 h-auto w-[85%]" alt="Selected" />
       </div>
     </div>
   );
