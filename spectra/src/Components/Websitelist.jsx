@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const listStyle = "m-4 p-4 text-black text-lg hover:text-purple-800 font-medium";
+const listStyle =
+  "py-2 text-black text-lg hover:text-purple-800 font-medium";
 
-const baseImageUrl = "https://cdn.shortpixel.ai/spai/w_1233+q_lossless+ret_img+to_webp/wpspectra.com/wp-content/uploads/2022/08/";
+const baseImageUrl =
+  "https://cdn.shortpixel.ai/spai/w_1233+q_lossless+ret_img+to_webp/wpspectra.com/wp-content/uploads/2022/08/";
 
 const imageNames = [
   "fitness-website.jpg",
@@ -14,7 +16,7 @@ const imageNames = [
   "pet-care.jpg",
   "hotel-industry.jpg",
   "yoga-template.jpg",
-  "medical-lab.jpg"
+  "medical-lab.jpg",
 ];
 
 const linkNames = [
@@ -27,27 +29,35 @@ const linkNames = [
   "Pet Care and Clinics",
   "Tourist and Hotel Industry",
   "Health and Fitness",
-  "Doctor Clinics and Hospitals"
+  "Doctor Clinics and Hospitals",
 ];
 
 const Websitelist = () => {
-  const [selectedImage, setSelectedImage] = useState(`${baseImageUrl}${imageNames[0]}`);
+  const [selectedImage, setSelectedImage] = useState(
+    `${baseImageUrl}${imageNames[0]}`
+  );
+  const [selectedLinkIndex, setSelectedLinkIndex] = useState(0);
 
-  const handleLinkClick = (event, imageName) => {
+  const handleLinkClick = (event, imageName, index) => {
     event.preventDefault();
     setSelectedImage(`${baseImageUrl}${imageName}`);
+    setSelectedLinkIndex(index);
   };
 
   return (
-    <div className='flex flex-row'>
-      <div className=''>
+    <div className="flex flex-col md:flex-row justify-center">
+      <div className="m-0 p-2 min-w-[300px]">
         <ul>
           {imageNames.map((name, index) => (
-            <li className='m-4' key={index}>
+            <li className="m-4" key={index}>
               <a
-                href='#'
-                className={listStyle}
-                onClick={(e) => handleLinkClick(e, name)}
+                href="#"
+                className={`${listStyle} ${
+                  selectedLinkIndex === index
+                    ? "border-b-2 border-purple-800 py-3"
+                    : ""
+                }`}
+                onClick={(e) => handleLinkClick(e, name, index)}
               >
                 {linkNames[index]}
               </a>
@@ -55,8 +65,8 @@ const Websitelist = () => {
           ))}
         </ul>
       </div>
-      <div className=''>
-        <img src={selectedImage} alt='Selected' />
+      <div className="md:flex md:flex-col md:items-center justify-center">
+        <img src={selectedImage} className="m-2 h-auto w-[85%]" alt="Selected" />
       </div>
     </div>
   );
