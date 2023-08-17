@@ -47,8 +47,13 @@ const Websitelist = () => {
   return (
     <>
     <div>
-        <h1 className="flex justify-center items-center text-4xl font-serif font-semibold p-0 text-center">  Largest Library of Pre-built Websites With One-click Installer  </h1>
-        </div>
+  <h1 className="flex justify-center items-center sm:text-2xl md:text-3xl lg:text-4xl font-serif font-semibold p-0 text-center">
+    Largest Library of Pre-built Websites
+    <br />
+    With One-click Installer
+  </h1>
+</div>
+
         
     <div className="flex flex-col md:flex-row justify-center my-20">
         
