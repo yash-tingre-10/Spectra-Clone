@@ -36,7 +36,7 @@ const footerLinks = {
 const Footer = () => {
   return (
     <div className="bg-creamyt">
-      <div className=" p-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+      <div className="m-0 p-4 grid grid-cols-2 gap-4 md:grid-cols-4">
         <Footeritem heading="OUR PRODUCTS" links={footerLinks["OUR PRODUCTS"]} />
         <Footeritem heading="FEATURES" links={footerLinks["FEATURES"]} />
         <Footeritem heading="RESOURCES" links={footerLinks["RESOURCES"]} />

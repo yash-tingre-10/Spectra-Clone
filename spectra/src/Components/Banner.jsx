@@ -15,7 +15,7 @@ const Banner = () => {
       </button>
 
       <div className="text-center mt-8">
-        <img src={bannerIMG} className="mx-auto" alt="Banner" />
+        <img src={bannerIMG} className="mx-auto w-auto" alt="Banner" />
       </div>
     </div>
   );
