@@ -1,6 +1,6 @@
 # Spectra Clone
 
-## Demployed on Vercel
+## Deployed on Vercel
 Check out the live demo at [https://spectra-clone.vercel.app/](https://spectra-clone.vercel.app/).
 
 
